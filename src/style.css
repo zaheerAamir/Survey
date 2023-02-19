@@ -1,0 +1,105 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: none;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #1720cf;
+}
+
+.selected {
+  background-color: #5c4646;
+}
+
+
+.start-btn, .next-btn, .prev-btn, .sub-btn {
+  height: 50px;
+  width: 70px;
+  border-radius: 0;
+
+  transition: transform 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+.start-btn:hover, .next-btn:hover, .prev-btn:hover, .sub-btn:hover {
+  transform: translateY(-20px);
+  background-color: #3036a2;
+}
+
+.yooo {
+  height: 400px;
+  width: 400px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(47, 42, 42);
+  border-radius: 40px;
+}
+
+.btn-grid {
+  padding: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+#question {
+  color: white;
+}
+
+#target {
+  color: white;
+}
+
+#status {
+  position: relative;
+  bottom: 180px;
+  left: 350px;
+} 
+
+h2 {
+  color: whitesmoke;
+}
+
+.input {
+  height: 160px;
+  width: 250px;
+  position: relative;
+  left: 30px;
+}
